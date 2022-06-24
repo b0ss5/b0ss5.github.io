@@ -1,0 +1,117 @@
+
+.dark {
+  background-color: black;
+}
+
+.light{
+  background-color: white;
+}
+
+.blue{
+	color:#4A99FF;
+}
+.red{
+	color:red;
+}
+
+.yellow{
+	color:#F5EA04;
+}
+
+.box {
+		box-align: center;
+    display: inline-block;
+    width: 500px;
+    border: 3px solid rgb(161, 161, 161);
+    text-align: center;
+		border-radius: 5px;
+		background: rgb(255, 255, 255)
+}
+
+.collapsibleBlue {
+	display:inline-block;
+	font-weight:400;
+	color:#fff;
+	background-color:#007bff;
+	border:1px solid transparent;
+	padding:.375rem .75rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  outline: none;
+
+}
+
+.collapsibleRed {
+	display:inline-block;
+	font-weight:400;
+	background-color:#dc3545;
+	color:#fff;
+	border:1px solid transparent;
+	padding:.375rem .75rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  outline: none;
+
+}
+
+.collapsibleYellow {
+	display:inline-block;
+	background-color: #ffc107;
+	color: #212529;
+	font-weight:400;
+	border:1px solid transparent;
+	padding:.375rem .75rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  outline: none;
+
+}
+
+
+.rainbow {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 32px;
+  font-family: monospace;
+  letter-spacing: 5px;
+  animation: colorRotate 6s linear 0s infinite;
+}
+
+@keyframes colorRotate {
+  from {
+    color: #6666ff;
+  }
+  10% {
+    color: #0099ff;
+  }
+  50% {
+    color: #00ff00;
+  }
+  75% {
+    color: #ff3399;
+  }
+  100% {
+    color: #6666ff;
+  }
+
+}
+.btn-check{
+	background-color:blue;
+}
+
+.listcard {
+	padding: 2px 16px;
+	outline: black;
+}

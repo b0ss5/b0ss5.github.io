@@ -1,0 +1,31 @@
+<head>
+	<title>Login</title>
+</head>
+
+<body>
+<p style="color:red;">{{error}}</p>
+<div class="loginform">
+	<h1 > Login </h1>
+	<form action="/" method="POST">
+	<label for="Username">Username: </label><br>
+	<input type="text" name = "username" id="username"><br>
+	<label for="password">Password: </label><br>
+	<input type="password" name = "password" id="password"><br>
+	<input type="submit" name="submit" id="login" value="login">
+	</form>
+	
+	</div>
+<div class= "signupform">
+	<h1 > Sign up </h1>
+	<form action="/" method="POST">
+	<label for="newuser">Username: </label><br>
+	<input type="text" name = "newuser" id="newuser"><br>
+	<label for="newpassword">Password: </label><br>
+	<input type="password" name = "newpassword" id="newpassword"><br>
+	<label for="newkey">API Key: </label><br>
+	<input type="text" name = "newkey" id="newkey"><br>
+
+	<input type="submit" name="submit" id="create" value = "signin">
+	</form>
+	</div>
+</body>

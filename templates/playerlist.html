@@ -1,0 +1,49 @@
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="static/style.css">
+<style>
+
+</style>
+<head>
+</head>
+<body class={{theme}}>
+	<h1 class={{secondaryT}}> Player List </h1>
+	<form action="/home">
+	<button class={{secondaryB}} >Exit</button>
+	</form>
+		{% for player, stats in onplist.items() %}
+	<div style="width: 650px; height: 400px; margin: 10px;border: 1px solid black; background-color: #EBEBEB;">
+			<form method = 'POST' type='submit' action ='/search'>
+			<button class={{secondaryB}} id="Susername" name="Susername" value={{player}} type='submit'>{{player}}</button> </form>
+		<div style="float:left">
+		<img src={{skinlist[player]}} style ="width: 145px; height: 270px; padding: 20px">
+		</div>
+			{% for stat, value in stats.items() %}
+		<div>
+				<h1 class = {{secondaryT}} style="margin: 30px; font-size: 30px"> 
+    {{stat}} : {{value}} </h1>
+		</div>
+
+			{% endfor %}
+	</div>	
+		</body>
+	{% endfor %}
+		{% for player, stats in offplist.items() %}
+	<div style="width: 650px; height: 400px; margin: 10px;border: 1px solid black; background-color: #EBEBEB;">
+			<form method = 'POST' type='submit' action ='/search'>
+			<button class={{secondaryB}} id="Susername" name="Susername" value={{player}} type='submit'>{{player}}</button> </form>
+		<div style="float:left">
+		<img src={{skinlist[player]}} style ="width: 145px; height: 270px; padding: 20px">
+		</div>
+			{% for stat, value in stats.items() %}
+		<div>
+				<h1 class = {{secondaryT}} style="margin: 30px; font-size: 30px"> 
+    {{stat}} : {{value}} </h1>
+		</div>
+
+			{% endfor %}
+	</div>	
+		</body>
+	{% endfor %}
+
+</body>
